@@ -3,49 +3,49 @@
 
 const quiz = [
   {
-  question: 'Q1. 門田暁憲のことが大好きですか？',
+  question: "Q1. 門田暁憲のことが大好きですか？",
   choices: [
-  '大好き',
-  'まぁまぁ好き',
-  '普通',
-  '嫌い'
+  "大好き",
+  "まぁまぁ好き",
+  "普通",
+  "嫌い"
   ],
-  correct: '大好き'
+  correct: "大好き"
   },
   {
-  question: 'Q2. 仕事で帰りが遅くても許してくれますか？',
+  question: "Q2. 仕事で帰りが遅くても許してくれますか？",
   choices: [
-  'もちろん、それでも大好き',
-  '黙って早く帰ってこい！'
+  "もちろん、それでも大好き",
+  "黙って早く帰ってこい！"
   ],
-  correct: 'もちろん、それでも大好き'
+  correct: "もちろん、それでも大好き"
   },
   {
-  question: 'Q3. 喧嘩した時は凄く残業して遅く帰って来ますがいいですか？',
+  question: "Q3. 喧嘩した時は凄く残業して遅く帰って来ますがいいですか？",
   choices: [
-  '定時で帰ってこい',
-  '有給にして許してもらえるようにサプライズでも用意しろ',
-  '一人の時間できるからOK',
-  '大好きだから早く仲直りしようね'
+  "定時で帰ってこい",
+  "有給にして許してもらえるようにサプライズでも用意しろ",
+  "一人の時間できるからOK",
+  "大好きだから早く仲直りしようね"
   ],
-  correct: '大好きだから早く仲直りしようね'
+  correct: "大好きだから早く仲直りしようね"
   },
   {
-  question: 'Q4. 仕事を頑張った日の足はとても香ばしい匂いがしますが、それでも愛しますか？',
+  question: "Q4. 仕事を頑張った日の足はとても香ばしい匂いがしますが、それでも愛しますか？",
   choices: [
-  'すぐにお風呂入ってください',
-  'もちろん、大好きです'
+  "すぐにお風呂入ってください",
+  "もちろん、大好きです"
   ],
-  correct: 'もちろん、大好きです'
+  correct: "もちろん、大好きです"
   },
   {
-  question: 'Q5. 二度寝が大好きですが朝から叩かないと約束しますか？',
+  question: "Q5. 二度寝が大好きですが朝から叩かないと約束しますか？",
   choices: [
-  '叩く',
-  '水をかける',
-  'もちろん一緒に二度寝してやる'
+  "叩く",
+  "水をかける",
+  "もちろん一緒に二度寝してやる"
   ],
-  correct: 'もちろん一緒に二度寝してやる'
+  correct: "もちろん一緒に二度寝してやる"
   },
   
   
@@ -56,11 +56,11 @@ const quiz = [
 let quizIndex = 0;
 let score = 0;
  
-const button = document.getElementsByTagName('button');
+const button = document.getElementsByTagName("button");
 const buttonLength = button.length;
  
 const setupQuiz = () => {
- document.getElementById('question').textContent = quiz[quizIndex].question;
+ document.getElementById("question").textContent = quiz[quizIndex].question;
  let buttonIndex = 0;
  while(buttonIndex < buttonLength) {
   button[buttonIndex].textContent = quiz[quizIndex].choices[buttonIndex];
